@@ -1,4 +1,3 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,23 +8,63 @@
 
 <meta name="description" content="Free Puppy Weight Calculator. Estimate your puppy's adult weight based on age and current weight.">
 
+<meta name="keywords" content="puppy weight calculator,adult dog weight calculator,puppy growth calculator,estimate dog size">
+
 <meta name="robots" content="index,follow">
 
 <link rel="canonical" href="https://mmm071026246-lgtm.github.io/pet-calculators/puppy-weight-calculator.html">
 
+<script type="application/ld+json">
+{
+ "@context":"https://schema.org",
+ "@type":"FAQPage",
+ "mainEntity":[
+  {
+   "@type":"Question",
+   "name":"Can a puppy's adult weight be predicted?",
+   "acceptedAnswer":{
+    "@type":"Answer",
+    "text":"Yes. Adult weight can be estimated using age, current weight, and breed characteristics, although results are not guaranteed."
+   }
+  },
+  {
+   "@type":"Question",
+   "name":"Are puppy weight calculators accurate?",
+   "acceptedAnswer":{
+    "@type":"Answer",
+    "text":"They provide estimates only. Actual adult weight may vary depending on genetics, nutrition, and breed."
+   }
+  },
+  {
+   "@type":"Question",
+   "name":"Do large breeds grow longer than small breeds?",
+   "acceptedAnswer":{
+    "@type":"Answer",
+    "text":"Yes. Large and giant breeds often continue growing for up to 18–24 months."
+   }
+  }
+ ]
+}
+</script>
+
 <style>
 body{
     font-family:Arial,sans-serif;
-    max-width:800px;
+    max-width:850px;
     margin:auto;
     padding:20px;
-    line-height:1.6;
+    line-height:1.7;
+    color:#333;
 }
 
 input,button{
     padding:10px;
     font-size:16px;
     margin-top:10px;
+}
+
+button{
+    cursor:pointer;
 }
 
 .result{
@@ -35,7 +74,31 @@ input,button{
 }
 
 a{
+    color:#2563eb;
     text-decoration:none;
+}
+
+a:hover{
+    text-decoration:underline;
+}
+
+.notice{
+    background:#f8fafc;
+    border-left:5px solid #2563eb;
+    padding:15px;
+    margin:20px 0;
+    border-radius:6px;
+}
+
+.related-box{
+    background:#f8f9fa;
+    padding:15px;
+    border-radius:8px;
+    margin-top:25px;
+}
+
+ul{
+    padding-left:20px;
 }
 </style>
 </head>
@@ -47,16 +110,15 @@ a{
 <h1>Puppy Weight Calculator</h1>
 
 <p>
-Estimate your puppy's adult weight based on current age and weight.
-Results are estimates and may vary by breed.
+Estimate your puppy's adult weight based on current age and weight. Results are estimates only and may vary depending on breed, genetics, nutrition, and overall health.
 </p>
 
-<label>Puppy Age (months):</label><br>
+<label for="age">Puppy Age (months):</label><br>
 <input type="number" id="age" min="1">
 
 <br>
 
-<label>Current Weight (kg):</label><br>
+<label for="weight">Current Weight (kg):</label><br>
 <input type="number" id="weight" min="0.1" step="0.1">
 
 <br>
@@ -68,18 +130,86 @@ Results are estimates and may vary by breed.
 <h2>How It Works</h2>
 
 <p>
-A common estimation method multiplies the puppy's current weight
-based on growth stage. Larger breeds may grow for a longer period.
+This calculator uses a simplified growth estimation formula based on age and current weight. Actual adult size may differ significantly between breeds.
+</p>
+
+<h2>Factors That Affect Adult Weight</h2>
+
+<ul>
+<li>Breed size</li>
+<li>Genetics</li>
+<li>Nutrition</li>
+<li>Exercise</li>
+<li>Overall health</li>
+</ul>
+
+<div class="notice">
+<strong>Note:</strong> Small breeds often reach adult size by 10–12 months, while large breeds may continue growing for up to 24 months.
+</div>
+
+<h2>Understanding Puppy Growth</h2>
+
+<p>
+Puppies grow rapidly during the first year of life. Monitoring weight regularly can help identify whether growth is progressing normally.
+</p>
+
+<p>
+Learn more in our
+<a href="puppy-growth-stages-month-by-month.html">Puppy Growth Stages Month by Month</a>
+guide.
 </p>
 
 <hr>
+
+<h2>Frequently Asked Questions</h2>
+
+<h3>Can a puppy's adult weight be predicted?</h3>
+<p>
+Yes, but only approximately. Genetics and breed characteristics have a major influence on final adult size.
+</p>
+
+<h3>Are puppy weight calculators accurate?</h3>
+<p>
+They provide estimates rather than exact predictions. Actual weight can vary.
+</p>
+
+<h3>Do large breeds grow longer than small breeds?</h3>
+<p>
+Yes. Large and giant breeds typically continue growing much longer than small breeds.
+</p>
+
+<h3>When is a dog considered fully grown?</h3>
+<p>
+Many small breeds are fully grown by 12 months, while some large breeds may continue growing until 18–24 months.
+</p>
+
+<hr>
+
+<div class="related-box">
 
 <h2>Related Calculators</h2>
 
 <ul>
 <li><a href="dog-age-calculator.html">Dog Age Calculator</a></li>
 <li><a href="dog-food-calculator.html">Dog Food Calculator</a></li>
+<li><a href="dog-water-intake-calculator.html">Dog Water Intake Calculator</a></li>
+<li><a href="dog-calorie-calculator.html">Dog Calorie Calculator</a></li>
 </ul>
+
+</div>
+
+<div class="related-box">
+
+<h2>Related Articles</h2>
+
+<ul>
+<li><a href="puppy-growth-stages-month-by-month.html">Puppy Growth Stages Month by Month</a></li>
+<li><a href="how-much-food-should-i-feed-my-dog.html">How Much Food Should I Feed My Dog?</a></li>
+<li><a href="how-much-water-should-a-dog-drink.html">How Much Water Should a Dog Drink?</a></li>
+<li><a href="how-to-calculate-dog-age.html">How to Calculate Dog Age in Human Years</a></li>
+</ul>
+
+</div>
 
 <script>
 function calculateWeight(){
@@ -103,4 +233,3 @@ adultWeight.toFixed(1) + " kg";
 
 </body>
 </html>
-```

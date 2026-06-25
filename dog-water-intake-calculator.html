@@ -1,5 +1,5 @@
-```html id="6qtw91"
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -7,11 +7,46 @@
 
 <title>Dog Water Intake Calculator - Daily Water Needs</title>
 
-<meta name="description" content="Free Dog Water Intake Calculator. Estimate your dog's recommended daily water intake based on body weight.">
+<meta name="description" content="Free Dog Water Intake Calculator. Estimate your dog's recommended daily water intake based on body weight and learn how much water dogs should drink each day.">
+
+<meta name="keywords" content="dog water intake calculator,how much water should a dog drink,dog hydration calculator,daily dog water needs">
 
 <meta name="robots" content="index,follow">
 
 <link rel="canonical" href="https://mmm071026246-lgtm.github.io/pet-calculators/dog-water-intake-calculator.html">
+
+<script type="application/ld+json">
+{
+ "@context":"https://schema.org",
+ "@type":"FAQPage",
+ "mainEntity":[
+  {
+   "@type":"Question",
+   "name":"How much water should a dog drink per day?",
+   "acceptedAnswer":{
+    "@type":"Answer",
+    "text":"Most healthy dogs require approximately 50 to 60 ml of water per kilogram of body weight daily."
+   }
+  },
+  {
+   "@type":"Question",
+   "name":"Do active dogs need more water?",
+   "acceptedAnswer":{
+    "@type":"Answer",
+    "text":"Yes. Exercise, hot weather, and certain diets can increase water requirements."
+   }
+  },
+  {
+   "@type":"Question",
+   "name":"Can dogs drink too much water?",
+   "acceptedAnswer":{
+    "@type":"Answer",
+    "text":"Excessive water consumption may indicate a health problem and should be discussed with a veterinarian."
+   }
+  }
+ ]
+}
+</script>
 
 <style>
 body{
@@ -19,7 +54,12 @@ body{
     max-width:800px;
     margin:auto;
     padding:20px;
-    line-height:1.6;
+    line-height:1.7;
+    color:#333;
+}
+
+h1,h2,h3{
+    color:#222;
 }
 
 input,button{
@@ -28,16 +68,52 @@ input,button{
     margin-top:10px;
 }
 
+button{
+    cursor:pointer;
+    background:#2563eb;
+    color:white;
+    border:none;
+    border-radius:6px;
+}
+
+button:hover{
+    opacity:0.9;
+}
+
 .result{
     margin-top:20px;
+    padding:15px;
+    background:#f4f8ff;
+    border-left:5px solid #2563eb;
+    border-radius:6px;
     font-size:22px;
     font-weight:bold;
 }
 
 a{
+    color:#2563eb;
     text-decoration:none;
 }
+
+a:hover{
+    text-decoration:underline;
+}
+
+.related-box{
+    background:#f8f9fa;
+    padding:15px;
+    margin-top:25px;
+    border-radius:8px;
+}
+
+.notice{
+    background:#fff8e1;
+    padding:15px;
+    border-left:5px solid #f59e0b;
+    border-radius:6px;
+}
 </style>
+
 </head>
 
 <body>
@@ -47,61 +123,121 @@ a{
 <h1>Dog Water Intake Calculator</h1>
 
 <p>
-Estimate your dog's daily water needs based on body weight.
-Water requirements can vary depending on temperature, activity level, diet, and overall health.
+Estimate your dog's daily water needs based on body weight. Water requirements vary depending on age, activity level, weather, diet, and overall health.
 </p>
 
-<label>Dog Weight (kg):</label><br>
+<label><strong>Dog Weight (kg):</strong></label> <br>
+
 <input type="number" id="weight" min="0.1" step="0.1">
 
 <br>
 
-<button onclick="calculateWater()">Calculate Water Intake</button>
+<button onclick="calculateWater()">
+Calculate Water Intake
+</button>
 
 <div class="result" id="result"></div>
 
 <h2>Daily Water Requirements</h2>
 
 <p>
-Healthy dogs typically need between 50 and 60 milliliters of water per kilogram of body weight each day.
-This calculator uses 55 ml per kilogram as a general guideline.
+Healthy dogs typically require between 50 and 60 milliliters of water per kilogram of body weight per day. This calculator uses 55 ml per kilogram as a general guideline.
 </p>
 
 <h2>Why Hydration Matters</h2>
 
 <p>
-Adequate hydration supports digestion, circulation, temperature regulation, and overall health.
-Always ensure your dog has access to fresh drinking water.
+Proper hydration supports digestion, circulation, temperature regulation, joint health, and overall well-being.
+</p>
+
+<h2>Signs of Dehydration in Dogs</h2>
+
+<ul>
+<li>Dry nose or gums</li>
+<li>Excessive panting</li>
+<li>Loss of appetite</li>
+<li>Low energy levels</li>
+<li>Sunken eyes</li>
+<li>Reduced skin elasticity</li>
+</ul>
+
+<div class="notice">
+<strong>Important:</strong> If your dog drinks significantly more or less water than normal, consult a veterinarian.
+</div>
+
+<hr>
+
+<h2>Frequently Asked Questions</h2>
+
+<h3>How much water should a dog drink daily?</h3>
+<p>
+Most dogs need approximately 50–60 ml of water per kilogram of body weight each day.
+</p>
+
+<h3>Do puppies need more water?</h3>
+<p>
+Puppies may require more frequent access to water due to growth and activity levels.
+</p>
+
+<h3>Can dry food increase water needs?</h3>
+<p>
+Yes. Dogs eating dry kibble generally drink more water than dogs eating wet food.
+</p>
+
+<h3>Can dogs drink too much water?</h3>
+<p>
+Excessive thirst may indicate an underlying health issue and should be evaluated by a veterinarian.
 </p>
 
 <hr>
+
+<div class="related-box">
 
 <h2>Related Calculators</h2>
 
 <ul>
 <li><a href="dog-food-calculator.html">Dog Food Calculator</a></li>
 <li><a href="dog-calorie-calculator.html">Dog Calorie Calculator</a></li>
+<li><a href="puppy-weight-calculator.html">Puppy Weight Calculator</a></li>
+<li><a href="dog-age-calculator.html">Dog Age Calculator</a></li>
 </ul>
+
+</div>
+
+<div class="related-box">
+
+<h2>Related Articles</h2>
+
+<ul>
+<li><a href="how-much-water-should-a-dog-drink.html">How Much Water Should a Dog Drink?</a></li>
+<li><a href="how-much-food-should-i-feed-my-dog.html">How Much Food Should I Feed My Dog?</a></li>
+<li><a href="signs-your-dog-is-overweight.html">Signs Your Dog Is Overweight</a></li>
+<li><a href="puppy-growth-stages-month-by-month.html">Puppy Growth Stages Month by Month</a></li>
+</ul>
+
+</div>
 
 <script>
 function calculateWater(){
 
-let weight = parseFloat(document.getElementById("weight").value);
+const weight =
+parseFloat(document.getElementById("weight").value);
 
 if(isNaN(weight) || weight <= 0){
+
 document.getElementById("result").innerHTML =
 "Please enter a valid weight.";
+
 return;
 }
 
-let water = weight * 55;
+const water = weight * 55;
 
 document.getElementById("result").innerHTML =
-"Recommended Daily Water Intake: " +
+"💧 Recommended Daily Water Intake: <br>" +
 water.toFixed(0) + " ml";
 }
 </script>
 
 </body>
 </html>
-```
